@@ -1,0 +1,220 @@
+/*
+Theme Name: Child Theme of Arras
+Theme URI: http://www.arrastheme.com/
+Description: Child theme for the Arras for WordPress
+Author: Creature
+Author URI: http://www.arrastheme.com/
+Template: arras-theme
+Version: 1.0
+.
+For more information on how to create and use child themes:
+http://codex.wordpress.org/Child_Themes
+
+Any CSS code written below will override any existing
+declarations from the theme itself.
+.
+*/
+
+/* ----------------------------------------------------------------------------
+ 
+                            ARRAS LIGHT, Ver 0.1
+  
+     ! PLEASE MAKE SURE YOU HAVE DISABLED THE CUSTOM BACKGROUND AND
+       HAVE SET Featured Slideshow THUMBNAIL SIZE TO 948 x 250 IN
+                         THE ARRAS OPTION PANEL.
+ 
+         This is a CCS customization for the Arras Wordpress theme
+             Created by Mads Rosendahl - 2011, madsrh(a)gmail.com
+ 
+---------------------------------------------------------------------------- */
+
+body {font-family: Tahoma, Geneva, sans-serif; font-size:11px; /* line-height:20px; */ color:#797979;  background:url("http://www.madsrosendahl.dk/wp-content/plugins/arras-tweak/images/untitled-bg.jpg"); background-repeat:repeat;}
+
+.posts-default .entry-summary, .posts-quick .entry-summary { font-size:11px;
+color: #797979;}
+
+#wrapper {padding: 20px; min-height: 500px; }
+#nav {height: 20px; background: none;}
+#nav-content {padding: 0px 0px 0px 0px;}
+#top-menu { background: #fff; border-bottom: 0px; }
+.single .post, #main .single-post {border: 0px;}
+
+p, ul, ol, pre, table, h1, h2, h3, h4, h5 , h6, blockquote { margin-bottom: 10px; }
+h1 { font-size:24px; line-height:34px; font-weight:bold; }
+h2 { font-size:22px; line-height:32px; font-weight:bold; }
+h3 { font-size:20px; line-height:30px; font-weight:bold; }
+h4 { font-size:18px; line-height:28px; font-weight:bold; }
+h5 { font-size:16px; line-height:26px; font-weight:bold; }
+h6 { font-size:13px; line-height:24px; font-weight:bold; margin-bottom:10px; }
+#footer h5 { font-size: 13px; }
+a { color:#e97846; text-decoration:none; }
+a:hover { color:#e97846;  } 
+small { font-size:11px; font-family:"Georgia"; color:#949494; }
+strong { font-weight:bold; }
+em, cite { font-style:italic; }
+
+#header { background:#fff; border-bottom:1px solid #dedfdf; box-shadow: 0 0 6px #E6E6E6 inset; }
+  
+#index-featured1 { margin-left: auto; margin-right: auto;}
+
+#main, #footer { min-height: 100%; margin:0 auto; margin-bottom:0px; background:#fff; border:1px solid #dedfdf; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: inset 0 0 6px #e6e6e6; -webkit-box-shadow: inset 0 0 6px #e6e6e6; }
+
+#footer { margin-top: 10px;}
+
+.posts-quick .entry-thumbnails, .posts-default .entry-thumbnails-link { padding: 2px;}
+
+/* SLIDESHOW */
+ #featured-slideshow { margin: 5px; border: 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: inset 0 0 6px #e6e6e6; -webkit-box-shadow: inset 0 0 6px #e6e6e6;}
+
+.featured { width: 958px; margin: 0 0px 20px 0;}
+.featured-entry { opacity: 1.0; background: white; color: #797979; top: -44px; height: 58px; }
+
+.featured-entry .entry-title {
+color: #797979;
+padding: 6px 15px 5px;
+font-size: 16px;
+font-weight: normal;
+}
+
+#controls .next, #controls .prev { top: -12px;}
+
+.posts-default .entry-comments, .posts-quick .entry-comments { display: none;}
+.posts-default .entry-meta, .posts-quick .entry-meta { display: none;}
+
+.posts-default { margin: 0 0 0px; }
+
+.posts-default li { height: auto; margin: 0 15px 0px 0;}
+
+.single .post .entry-cat, .single-post .entry-cat { display: none;}
+
+#commentlist .reply a, .comments-navigation a, .read-more, .navigation a, .wp-pagenavi a, #commentlist .comment-controls a:link, #commentlist .comment-controls a:visited , input[type="submit"], .posts-quick .quick-read-more a:link, .posts-quick .quick-read-more a:visited {
+padding: 4px 8px;
+margin: 2px 0;
+font-size: 11px;
+color: #545454;
+border-color: #eeeeee;
+text-decoration: none;
+font-weight: normal;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+ cursor:pointer; 
+}
+
+#commentlist .reply a:hover, .comments-navigation a:hover, .read-more, .navigation a:hover, .wp-pagenavi a:hover, #commentlist .comment-controls a:hover, input[type="submit"]:hover, .posts-quick .quick-read-more a:hover { 
+border: 1px solid #E97846;
+background-color: #E97846;
+color: white;
+}
+
+/* ***********************
+        SEARCH FORM
+************************* */
+.searchform { border: 0px solid #383332; background: none; }
+.searchsubmit {display: none;}
+#branding .searchform {
+	text-align: right; width:340px;
+}
+#branding .searchform div {
+	margin: 0;
+}
+#branding .s {
+        /* --- Adjust transparency level here 0.9 --- */
+	background: rgba(235, 235, 235, 0.4) url(http://www.madsrosendahl.dk/wp-content/plugins/arras-tweak/images/search.png) no-repeat 5px 6px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	float: right;
+	font-size: 11px;
+	height: 22px;
+        color: #797979;
+	padding: 4px 10px 4px 28px;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	width: 26%;
+}
+#branding .s:focus {
+	background-color: #f9f9f9;
+	width: 70%;
+}
+#branding #searchsubmit {
+	display: none;
+}
+#branding .only-search #searchform {
+	top: 5px;
+	z-index: 1;
+}
+#branding .only-search #s {
+	background-color: #666;
+	border-color: #000;
+	color: #222;
+}
+#branding .only-search #s,
+#branding .only-search #s:focus {
+	width: 85%;
+}
+#branding .only-search #s:focus {
+	background-color: #bbb;
+}
+
+#branding .only-search + #access div {
+	padding-right: 160px;
+}
+
+
+
+/* ***************************
+               MENU             
+ ***************************** */
+.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
+.sf-menu {padding-left: 24px; line-height:1.0; }
+.sf-menu ul { position:absolute; top:-999em; width:160px; }
+.sf-menu ul li { width:160px; }
+.sf-menu li:hover { visibility:inherit; }
+.sf-menu li { float:left; position:relative; z-index:80 }
+.sf-menu a { display:block; position:relative; }
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul { left:0;  z-index:99; }
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul { top:-999em; }
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul { left:130px; top:0; }
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {  top:-999em; }
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {   left:10em; top:0; }
+
+#nav .sf-menu a:hover, #nav .sf-menu li:hover, #nav .sf-menu li.sfHover, #nav .sf-menu ul li {background: none; color: #E97846; }
+#nav sf-menu ul li { border: 0px;  }
+#nav .sf-menu a { font-size: 11px; }
+.sf-shadow ul { background: white; padding: 0 0px 0px 0;}
+#nav .sf-menu li li a { font-size: 11px; border: 0px;}
+#nav .sf-menu li li a:hover { color: #e97846;}
+#nav .sf-menu ul li {  border-color: #eee;}
+
+.sf-shadow ul {-moz-border-radius-bottomleft: 0px;
+-moz-border-radius-topright: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+border-top-right-radius: 0px 0px;
+border-bottom-left-radius: 0px 0px;
+}
+
+.search-results h2, .module-title, .feed-title, #reply-title { color: #333;
+font-size: 11px;
+font-weight: 700;
+margin: 0 10px 0 0;
+padding: 7px 10px;
+line-height: 11px;
+background: url(http://www.madsrosendahl.dk/wp-content/plugins/arras-tweak/images/separator.png); repeat-x top #EFEFEF;
+border: 0px;
+padding: 0px 0px 0px 10px;}
+
+.search-results-content, .nocomments, #commentform, #commentlist, .comments-navigation {background: none; border: 0px;}
+
+.footer-sidebar-container { border-bottom: 0px; margin: 0px; }
+
+#top-menu .sf-menu a { font-size: 10px; border-right: 1px solid #EFEFEF; }
+#top-menu .sf-menu a:hover { background-color: #E97846; color: white;}

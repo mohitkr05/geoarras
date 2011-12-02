@@ -1,0 +1,16 @@
+V0.1 - 
+
+Added support for Geo Mashup Map on home page / Category page / Archive Page
+Added support for custom post types - Store
+Added support for custom taxonomy - Region
+
+v 0.2
+- Change the basic home page
+
+v0.3 
+- Changed header
+v 0.4
+changed design 
+white page layout 
+stitched look
+
