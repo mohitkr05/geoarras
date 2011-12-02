@@ -1,2 +1,20 @@
-Version 1:
-Added custom CSS geoapp.css
+
+Geo ARRAS
+First Commit - V 0.1
+Demo - http://geodeal.in
+Geo arras is a wordpress (http://wordpress.org) theme based on arras (www.arrastheme.com)
+The theme uses Geo Mashup Plugin to display the stores on a google map.
+The location is generated based on Regions.
+Custom CSS can be used.
+
+Features
+- Custom Post type 'stores'
+- Custom Taxonomy 'Regions'
+- Support for 'Facebook Comments'
+- Custom Login Page with Custom Logo
+
+
+Theme CSS - GEOAPP.CSS
+
+
+
